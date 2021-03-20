@@ -17,11 +17,22 @@ fn main() {
 
         // 型推論(mutable)
         let mut guess = String::new();
+        // &で参照渡しする
         io::stdin()
             .read_line(&mut guess) // read_line method on the standard input handle to get input from the user. 
             .expect("Failed to read line"); // error handling
+
+        // これだとStringでpanicになる
         // String型をスペース削除 && uint32型変換(ParseInt)
-        let guess: u32 = guess.trim().parse().expect("Please Type Number!!");
+        // let guess: u32 = guess.trim().parse().expect("Please Type Number!!");
+
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => {
+                println!("Please Type Number!!");
+                continue;
+            },
+        };
 
         // printf("%s-hoge", hoge)みたいな感じ
         println!("You guessed: {}", guess);
