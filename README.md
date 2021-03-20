@@ -30,6 +30,7 @@ https://doc.rust-lang.org/book/ch01-03-hello-cargo.html
 ## cargo_build
 
 ```zsh
+% cd hello_cargo
 % cargo build
 % ./target/debug/hello_cargo
 % cargo run
