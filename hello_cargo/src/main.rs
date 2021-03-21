@@ -46,5 +46,7 @@ fn main() {
                 break;
             },
         }
+
+        println!("finished!!");
     }
 }
