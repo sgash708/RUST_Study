@@ -1,4 +1,5 @@
 fn main() {
+    // mut は後で変更するものに対しては必ず必要
     let mut x = 5;
     println!("The value of x is: {}", x);
     x = 6;
