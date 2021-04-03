@@ -1,1 +1,1 @@
-/Users/suga_naoya/Desktop/RUST_Study/common/target/debug/common: /Users/suga_naoya/Desktop/RUST_Study/common/src/main.rs
+/Users/sugar708/rust_tutorial/common/target/debug/common: /Users/sugar708/rust_tutorial/common/src/main.rs
